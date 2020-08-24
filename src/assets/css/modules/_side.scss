@@ -1,0 +1,133 @@
+.side-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: $--side-bar-width;
+    background-color: #3a3f51;
+    z-index: 999;
+
+    &.active{
+        width: 64px;
+    }
+    
+    .header{
+        height: $--header-bar-height;
+        line-height: $--header-bar-height;
+        z-index: 999;
+        padding: 0 20px;
+        overflow: hidden;
+
+        i{
+            color: #eaebed;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            height: 22px;
+        }
+
+        span{
+            font-size: 14px;
+            color: #eaebed;
+            padding-left: 5px;
+            vertical-align: middle;
+        }
+    }
+
+    .nav{
+        position: relative;
+        height: 100%;
+        overflow-x: hidden!important;
+        overflow-y: scroll;
+    }
+
+    .scrollbar-wrapper {
+        overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+        right: 0px;
+    }
+
+    .el-scrollbar {
+        height: calc(100% - 50px);
+    }
+
+    .el-menu{
+        border-right: none;
+        height: 100%;
+        width: 100% !important;
+
+        .icon{
+            font-size: 14px;
+            margin-right: 10px;
+            color: #cedce4 !important;
+            vertical-align: middle
+        }
+
+        .el-menu-item.is-active{
+            background-color: #2e3344 !important;
+        }
+
+        .el-menu-item.is-active{
+            .c0{
+                color: #fff !important;
+            }
+        }
+
+        .el-submenu.is-active{
+            background-color: #2e3344 !important;
+
+            .el-submenu__title{
+                background-color: #2e3344 !important;
+            }
+
+            .el-menu{
+                background-color: #2e3344 !important;
+            }
+
+            .el-menu-item{
+                background-color: #2e3344 !important;
+            }
+        }
+
+        i.c1{
+            color: rgb(86, 74, 163) !important;
+        }
+
+        i.c2{
+            color: rgb(23, 151, 190) !important;
+        }
+
+        i.c3{
+            color: rgb(81, 198, 234) !important;
+        }
+
+        i.c4{
+            color: rgb(39, 194, 76) !important;
+        }
+    }
+
+    .el-menu--collapse{
+        .icon{
+            font-size: 16px !important;
+        }
+    }
+
+    .el-menu--collapse .el-submenu__title{
+        span{
+            display: none
+        }
+
+        .el-submenu__icon-arrow{
+            display: none
+        }
+
+    }
+
+    
+}

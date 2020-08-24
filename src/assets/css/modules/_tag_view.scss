@@ -1,0 +1,15 @@
+.tagview{
+    position: fixed;
+    left: $--side-bar-width;
+    right: 0;
+    top: $--header-bar-height;
+    height: $--tag-view-height;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    z-index: 999;
+    border-top: 1px solid #eee;
+
+    &.active{
+        left: 64px;
+    }
+}

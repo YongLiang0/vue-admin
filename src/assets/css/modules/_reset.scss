@@ -1,0 +1,94 @@
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+    body{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        -webkit-font-smoothing: antialiased;
+        font-size: 12px;
+        font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+        color: #333;
+        background-color: #F0F3F4;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar{
+        width: 6px;
+        background-color: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: #ccc;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: #f5f5f5;
+    }
+
+    article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul {
+        margin: 0;
+        padding: 0
+    }
+
+    li,ol,ul {
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+
+    a {
+        font-family: "microsoft yahei",'PingFangTC-Regular';
+        background-color: transparent;
+        text-decoration: none;
+        outline: 0;
+        color: #333;
+        -webkit-user-select: none
+    }
+
+    a:focus {
+        outline: 0
+    }
+
+    a:active,a:hover {
+        outline: 0;
+        text-decoration: none
+    }
+
+    img {
+        display: block
+    }
+
+    input,select,textarea{
+        font-family: "microsoft yahei",'PingFangTC-Regular';
+    }
+
+    input,select,textarea:focus {
+        outline: 0
+    }
+
+    fieldset,img {
+        border: 0
+    }
+
+    ol,ul {
+        list-style: none
+    }
+
+    a,ins {
+        cursor: pointer;
+        text-decoration: none
+    }
+}

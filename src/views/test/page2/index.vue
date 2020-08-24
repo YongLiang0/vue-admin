@@ -1,5 +1,5 @@
 <template>
     <div>
-        index1111
+        page2
     </div>
 </template>

@@ -1,0 +1,189 @@
+@charset 'utf-8';
+
+body{
+
+    .el-button{
+        border-radius: 0 !important
+    }
+
+    .el-button.is-circle{
+        border-radius: 50% !important
+    }
+
+    .el-message-box{
+        border-radius: 0 !important;
+        border: 0
+    }
+
+    .el-input__inner{
+        border-radius: 0 !important;
+        width: 100%
+    }
+
+    .el-input-group__append, .el-input-group__prepend{
+        border-radius: 0 !important;
+    }
+
+    .el-select{
+        width: 100%
+    }
+
+    .el-textarea__inner{
+        border-radius: 0 !important;
+    }
+
+    .el-dialog.is-fullscreen{
+        border-radius: 0 !important;
+    }
+
+    .el-dialog .el-dialog__header{
+        position: relative;
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        border-bottom: 1px solid #e8eaec;
+    }
+
+    .el-dialog .el-dialog__header .el-dialog__title{
+        font-size: 15px;
+        color: #333;
+    }
+
+    .el-dialog .el-dialog__header .el-dialog__headerbtn{
+        top: 50%;
+        margin-top: -9px;
+    }
+
+    .el-dialog__wrapper.w-400 .el-dialog{
+        width: 400px
+    }
+
+    .el-dialog__wrapper.w-600 .el-dialog{
+        width: 600px
+    }
+
+    .el-dialog__wrapper.w-900 .el-dialog{
+        width: 900px
+    }
+
+    .el-dialog__wrapper.w-1000 .el-dialog{
+        width: 1000px
+    }
+
+    .el-dialog .el-dialog__body{
+        padding: 0
+    }
+
+    .el-dialog .modal-body{
+        padding: 20px
+    }
+
+    .el-dialog .modal-body.min{
+        min-height: 200px
+    }
+
+    .el-form-item__label{
+        font-size: 12px;
+        padding-left: 4px;
+    }
+
+    .el-table__header-wrapper th{
+        background-color: #F6F8F8 !important;
+    }
+
+    .el-table__fixed-header-wrapper .is-leaf{
+        background-color: #F6F8F8 !important;
+    }
+
+    .el-table .el-table__row{
+        transition: all 0.6s;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+    }
+
+    .el-table .el-table__row.hover-row{
+        background-color: #f2f2f2 !important
+    }
+
+    .el-table tr.hover-row td{
+        background-color: #f2f2f2 !important
+    }
+
+    .el-message{
+        z-index: 9999999 !important;
+    }
+
+    .tags-select{
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+
+    .tags-select .el-tag{
+        cursor: pointer;
+        margin-right: 15px;
+        border-radius: 0;
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+
+    .el-dialog__footer{
+        text-align: center;
+    }
+
+    .el-select.w-120{
+        width: 120px;
+    }
+
+    .el-date-editor--datetimerange.w-360{
+        width: 360px;
+    }
+
+    .el-submenu .el-menu-item{
+        height: 36px;
+        line-height: 36px;
+        color: #666
+    }
+
+    .pswp__bg{
+        opacity: 0.6 !important;
+    }
+
+    .el-date-editor.el-input{
+        width: 100%
+    }
+
+    .el-alert{
+        border-radius: 0px !important;
+
+        .el-alert__title{
+            font-size: 12px !important;
+        }
+    }
+
+    .el-image__error{
+        font-size: 12px;
+    }
+
+    .fullscreen{
+        .f14{
+            font-size: 14px;
+        }
+
+        .el-dialog.is-fullscreen{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .el-dialog__body{
+                flex: 1;
+                overflow-y: auto;
+            }
+
+            .el-dialog__footer{
+                padding: 20px !important;
+                border-top: 1px solid #e8eaec;
+            }
+        }
+    }
+}

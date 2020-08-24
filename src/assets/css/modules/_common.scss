@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+html{
+
+    .clearfix:after {
+        clear: both;
+        content: "\200B";
+        display: block;
+        height: 0
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .grow{
+        flex: 1
+    }
+
+    .fdc{
+        flex-direction: column;
+    }
+
+    .fdr{
+        flex-direction: row;
+    }
+
+    .ac{
+        align-items: center
+    }
+
+    .as{
+        align-items: flex-start
+    }
+
+    .ae{
+        align-items: flex-end
+    }
+
+    .jc{
+        justify-content: center
+    }
+
+    .js{
+        justify-content: flex-start
+    }
+
+    .je{
+        justify-content: flex-end
+    }
+
+    .ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .text-gray{
+        color: #665;
+    }
+
+    .text-danger{
+        color: $--color-danger;
+    }
+
+    .text-primary{
+        color: $--color-primary;
+    }
+
+    .text-success{
+        color: $--color-success;
+    }
+
+    .clearPadding{
+        padding: 0 !important;
+    }
+
+    $box-max: 30;
+    $box-step: 5;
+
+    $box-prop: ('padding' , 'margin');
+    $box-direaction: ('top', 'right', 'bottom', 'left');
+
+    $i: $box-step;
+    @while $i <= $box-max {
+        @each $way in $box-direaction {
+            @each $prop in $box-prop {
+
+                .#{$prop}-#{$way}-#{$i} {
+                    #{$prop}-#{$way}: #{$i}px;
+                }
+
+                .#{$prop}-#{$i} {
+                    #{$prop}: #{$i}px;
+                }
+            }
+        }
+        $i: $i + $box-step;
+    }
+
+}
