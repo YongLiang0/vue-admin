@@ -8,8 +8,35 @@
     background-color: #fff;
     z-index: 999;
     border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
 
     &.active{
         left: 64px;
+    }
+
+    .el-scrollbar{
+        width: 100%;
+
+        .el-scrollbar__wrap {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0 !important;
+
+            .el-scrollbar__view{
+                white-space: nowrap;
+            }
+        }
+
+        .is-vertical{
+            width: 0 !important;
+            display: none !important;
+        }
+    }
+
+    .el-tag{
+        cursor: pointer;
+        margin-right: 5px;
     }
 }
