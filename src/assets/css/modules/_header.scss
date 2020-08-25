@@ -7,6 +7,7 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
     background-color: #fff;
     z-index: 999;
+    padding-right: 20px;
 
     &.active{
         left: 64px;
@@ -17,7 +18,35 @@
         height: $--header-bar-height;
     }
 
+    .right{
+        float: right;
+        height: $--header-bar-height;
+
+        .user{
+            cursor: pointer;
+            float: left;
+            height: $--header-bar-height;
+            line-height: $--header-bar-height;
+        }
+
+        .icon{
+            width: 30px;
+            height: 30px;
+            background-color: #eee;
+            float: left;
+            margin-top: calc((#{$--header-bar-height} - 30px) / 2);
+            margin-left: 20px;
+            border-radius: 50%;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+
     ul{
+        float: left;
+
         li{
             display: block;
             float: left;
