@@ -72,6 +72,30 @@ class utils {
         url = `?${url.substring(0,url.length - 1)}`;
         return url;
     }
+
+    /**
+     * 封装本地存储
+     */
+    static setLocalStorage(key,value){
+        window.localStorage.setItem(key,JSON.stringify(value));
+    }
+
+    /**
+     * 获取本地存储
+     */
+    static getLocalStorage(key){
+        var data = window.localStorage.getItem(key);
+        if(!data || data === 'null'){
+            return null;
+        }
+        var obj;
+        try {
+            obj = JSON.parse(data);
+        } catch (error) {
+            return null;
+        }
+        return obj;
+    }
 };
 
 var obj = {
