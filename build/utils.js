@@ -4,6 +4,7 @@ const HtmlWebpackPlugin  =  require("html-webpack-plugin");
 
 exports.getHtmlWebpackPlugin = function(env){
     return new HtmlWebpackPlugin({
+        favicon : './build/logo.png',
         inject : true,
         filename : './index.html',
         template : './index.html',

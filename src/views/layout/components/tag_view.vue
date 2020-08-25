@@ -1,5 +1,5 @@
 <template>
-    <div class="tagview"> 
+    <div class="tagview" :class="isShowCollapse ? 'active' : ''"> 
         <el-scrollbar>
             <div class="tag-item"
                 :class="isActive(item) ? 'active' : ''"

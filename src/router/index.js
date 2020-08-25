@@ -22,7 +22,7 @@ const _page_config = [
     },
     {
         path : '/layout',
-        component : getView('test/index'),
+        component : getView('tem/index'),
         name : 'index',
         meta : {
             title : '布局',
@@ -31,8 +31,8 @@ const _page_config = [
         children : [
             {
                 path : '/layout/table',
-                component : getView('test/page1/index'),
-                name : 'page1',
+                component : getView('tem/table/index'),
+                name : 'table',
                 meta : {
                     title : '表格',
                     icon : ''
@@ -40,8 +40,8 @@ const _page_config = [
             },
             {
                 path : '/layout/form',
-                component : getView('test/page2/index'),
-                name : 'page2',
+                component : getView('tem/form/index'),
+                name : 'form',
                 meta : {
                     title : '表单',
                     icon : ''

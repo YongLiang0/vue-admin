@@ -1,5 +1,5 @@
 <template lang='pug'>
-    div.side-bar(:class="$isShowCollapse ? 'active' : ''")
+    div.side-bar(:class="isShowCollapse ? 'active' : ''")
         .header
             i(class="el-icon-menu")
             span 管理后台
@@ -7,7 +7,7 @@
             el-menu(
                 router
                 :default-active="$route.path"
-                :collapse="$isShowCollapse"
+                :collapse="isShowCollapse"
                 background-color="#3a3f51"
                 text-color="#b4b6bd"
                 :unique-opened="true"

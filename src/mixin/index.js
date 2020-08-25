@@ -6,12 +6,14 @@ export default {
 
             computed : {
                 ...rootState([
+                    "isShowCollapse",
                 ]),
             },
 
             methods: {
 
                 ...rootMutations([
+                    'switchNavCollapse'
                 ]),
 
                 ...rootActions([

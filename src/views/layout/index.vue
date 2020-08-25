@@ -3,7 +3,7 @@
         layout-header 
         layout-side
         tag-view
-        .layout
+        .layout(:class="isShowCollapse ? 'active' : ''")
             router-view 
 </template>
 
