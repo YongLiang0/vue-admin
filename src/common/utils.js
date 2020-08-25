@@ -96,6 +96,30 @@ class utils {
         }
         return obj;
     }
+
+    /**
+     * 封装本地存储
+     */
+    static setSessionStorage(key,value){
+        window.sessionStorage.setItem(key,JSON.stringify(value));
+    }
+
+    /**
+     * 获取本地存储
+     */
+    static getSessionStorage(key){
+        var data = window.sessionStorage.getItem(key);
+        if(!data || data === 'null'){
+            return null;
+        }
+        var obj;
+        try {
+            obj = JSON.parse(data);
+        } catch (error) {
+            return null;
+        }
+        return obj;
+    }
 };
 
 var obj = {

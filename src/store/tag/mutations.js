@@ -17,7 +17,7 @@ const mutations = {
             title : view.meta.title
         };
         state.tagViewList.push(itemObj);
-        utils.setLocalStorage('STR_TAG_VIEW',state.tagViewList);
+        utils.setSessionStorage('STR_TAG_VIEW',state.tagViewList);
     },
     
     /**
@@ -27,7 +27,7 @@ const mutations = {
      */
     deleteTagView(state,index){
         state.tagViewList.splice(index,1);
-        utils.setLocalStorage('STR_TAG_VIEW',state.tagViewList);
+        utils.setSessionStorage('STR_TAG_VIEW',state.tagViewList);
     }
 
 
