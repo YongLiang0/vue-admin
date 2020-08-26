@@ -151,7 +151,7 @@ html,body{
                 }
 
                 &.pd{
-                    padding: 16px;
+                    padding: 12px;
                 }
 
                 .card-box{
@@ -179,29 +179,32 @@ html,body{
             }
 
             .form{
+                border : 1px solid #DEE5E7;
+                background-color: #fff;
+                padding: 20px;
                 overflow: hidden;
 
-                &.w-600{
-                    width: 600px;
+                .w-600{
+                    max-width: 600px;
                 }
 
-                &.w-700{
-                    width: 700px;
+                .w-700{
+                    max-width: 700px;
                 }
 
-                &.w-800{
-                    width: 800px;
+                .w-800{
+                    max-width: 800px;
                 }
 
-                &.w-900{
-                    width: 900px;
+                .w-900{
+                    max-width: 900px;
                 }
 
-                &.w-1000{
-                    width: 1000px;
+                .w-1000{
+                    max-width: 1000px;
                 }
 
-                &.auto{
+                .auto{
                     margin: auto;
                 }
 
@@ -228,6 +231,10 @@ html,body{
 
                 .sub-btn{
                     text-align: center;
+
+                    .w-160{
+                        width: 160px;
+                    }
                 }
             }
         }

@@ -60,6 +60,9 @@ export default {
                     this.isRightUrl = true;
                 };
             }
+            else{
+                this.loading = false;
+            }
         },
 
         /**
