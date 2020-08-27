@@ -4,6 +4,21 @@ export default {
     install(Vue) {
         Vue.mixin({
 
+            data(){
+                return{
+                    form_input_require : {
+                        required: true, 
+                        message: '请输入', 
+                        trigger: 'blur'
+                    },
+                    form_select_require : {
+                        required: true, 
+                        message: '请选择', 
+                        trigger: 'change'
+                    }
+                }
+            },
+
             computed : {
                 ...rootState([
                     "isShowCollapse",
