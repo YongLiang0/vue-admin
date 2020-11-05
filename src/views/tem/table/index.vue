@@ -1,33 +1,82 @@
 <template>
     <div class="page">
         <div class="page-filter">
-            <el-form inline size="small">
-                <el-form-item label="姓名：" >
-                    <el-input placeholder="请输入姓名" class="w-220"></el-input>
-                </el-form-item>
-                <el-form-item label="状态：" >
-                    <el-select></el-select>
-                </el-form-item>
-                <el-form-item label="开始日期：" >
-                    <el-date-picker
-                        type="datetime" 
-                        format="yyyy-MM-dd HH:mm:ss" 
-                        value-format="yyyy-MM-dd HH:mm:ss" 
-                        placeholder="选择开始日期">
-                    </el-date-picker>
-                </el-form-item>
-                <el-form-item label="结束日期：" >
-                    <el-date-picker
-                        type="datetime" 
-                        format="yyyy-MM-dd HH:mm:ss" 
-                        value-format="yyyy-MM-dd HH:mm:ss" 
-                        placeholder="选择结束日期">
-                    </el-date-picker>
-                </el-form-item>
-                <el-form-item class="pd">
-                    <el-button type="primary" icon="el-icon-search">搜索</el-button>
-                </el-form-item>
-            </el-form>
+            <div class="filter-form flex" :class="isShowAllFilter ? 'all' : ''">
+                <div class="grow">
+                    <el-form size="small" label-width="120px" label-position="left">
+                        <el-row>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="姓名：" >
+                                    <el-input placeholder="请输入姓名" class="w-220"></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="状态：" >
+                                    <el-select></el-select>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="开始日期：" >
+                                    <el-date-picker
+                                        type="datetime" 
+                                        format="yyyy-MM-dd HH:mm:ss" 
+                                        value-format="yyyy-MM-dd HH:mm:ss" 
+                                        placeholder="选择开始日期">
+                                    </el-date-picker>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="结束日期：" >
+                                    <el-date-picker
+                                        type="datetime" 
+                                        format="yyyy-MM-dd HH:mm:ss" 
+                                        value-format="yyyy-MM-dd HH:mm:ss" 
+                                        placeholder="选择结束日期">
+                                    </el-date-picker>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="姓名：" >
+                                    <el-input placeholder="请输入姓名" class="w-220"></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="状态：" >
+                                    <el-select></el-select>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="姓名：" >
+                                    <el-input placeholder="请输入姓名" class="w-220"></el-input>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="状态：" >
+                                    <el-select></el-select>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :xl="8" :lg="12" :md="24">
+                                <el-form-item label="状态：" >
+                                    <el-select></el-select>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
+                    </el-form>
+                </div>
+                <a class="more flex jc" @click="isShowAllFilter = !isShowAllFilter">
+                    <i :class="isShowAllFilter ? 'el-icon-arrow-up' : 'el-icon-arrow-down'"></i>
+                    <span v-text="isShowAllFilter ? '收起' : '展开'"></span>
+                </a>
+            </div>
+            <div class="filter-btn flex">
+                <div class="grow">
+                    <el-button type="primary" size="mini" icon="el-icon-search">搜索</el-button>
+                    <el-button type="warning" size="mini" icon="el-icon-close">重置</el-button>
+                </div>
+                <div class="je">
+                    <el-button type="success" size="mini" icon="el-icon-plus">新增</el-button>
+                </div>
+            </div>
         </div>
         <div class="page-content">
             <dynamic-table
@@ -66,6 +115,7 @@ export default {
         return {
             list : TABLE_DATA,
             totalCount : 100,
+            isShowAllFilter : false,
             filters : {
                 pageSize : 10,
                 pageNumber : 1

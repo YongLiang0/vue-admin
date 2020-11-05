@@ -27,6 +27,7 @@
             float: left;
             height: $--header-bar-height;
             line-height: $--header-bar-height;
+            margin-left: 12px;
         }
 
         .icon{
@@ -35,7 +36,6 @@
             background-color: #eee;
             float: left;
             margin-top: calc((#{$--header-bar-height} - 30px) / 2);
-            margin-left: 12px;
             border-radius: 50%;
             line-height: 30px;
             text-align: center;

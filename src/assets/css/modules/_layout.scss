@@ -78,9 +78,10 @@ html,body{
             }
 
             .page-filter{
-                padding: 20px 16px 0px 16px;
+                padding: 20px 16px;
                 border-bottom: 1px solid #DEE5E7;
                 background-color: #fff;
+                overflow: hidden;
 
                 .el-form-item.pd{
                     .el-form-item__content{
@@ -92,12 +93,44 @@ html,body{
                     }
                 }
 
-                .w-220{
-                    width: 220px;
+                .filter-form{
+                    // height: 51px;
+                    max-height: 51px;
+                    overflow: hidden;
+                    transition: all .4s cubic-bezier(0, 1, 0.5, 1);
+
+                    &.all{
+                        // height: auto;
+                        max-height: 300px;
+                    }
+
+                    .more{
+                        width: 80px;
+                        cursor: pointer;
+                        padding-top: 10px;
+
+                        i{
+                            font-size: 16px;
+                        }
+
+                        span{
+                            padding-left: 5px;
+                        }
+                    }
+
+                    .more:hover{
+                        color: $--color-primary;
+                    }
                 }
 
-                .w-360{
-                    width: 360px;
+                .filter-btn{
+                    padding-left: 10px;
+                    border-top: 1px dashed #eee;
+                    padding-top: 16px;
+
+                    &.pr{
+                        padding-right: 80px;
+                    }
                 }
             }
 

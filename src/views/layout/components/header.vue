@@ -10,6 +10,9 @@
             </ul>
         </div>
         <div class="right">
+            <div class="icon">
+                <i class="el-icon-s-custom"></i>
+            </div>
             <div class="user">
                 <el-dropdown>
                     <span class="el-dropdown-link">
@@ -21,9 +24,6 @@
                         <el-dropdown-item><i class="el-icon-switch-button"></i> 退出登录</el-dropdown-item>
                     </el-dropdown-menu>
                 </el-dropdown>
-            </div>
-            <div class="icon">
-                <i class="el-icon-s-custom"></i>
             </div>
         </div>
     </div>
